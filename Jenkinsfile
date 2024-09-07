@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/joelinfo19/PoC-jenkins-and-podman.git'  // Reemplaza con tu URL
+                git branch: 'main', url: 'https://github.com/joelinfo19/PoC-jenkins-and-podman.git'
             }
         }
 
